@@ -1,0 +1,189 @@
+/* COLOR */
+:root {
+    --primary-logotype: #965718;
+
+    --primary-text: #212121;
+
+    --primary-title: #212121;
+    --primary-subtitle: #525252;
+    
+    --form-title: #8e8f99;
+
+    --link-hover: #965718;
+
+
+    --button-hover: #965718;
+    --icon-hover: #965718;
+
+  }
+
+
+/*#region --BASE--*/
+body {
+    margin: 0;
+}
+
+html {
+    font-family: 'WindSong', cursive;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Roboto', sans-serif;
+
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+
+address {
+  font-style: normal;
+}
+/*#endregion ---BASE---*/
+
+
+/*#region --UTILITIES--*/
+/* Скрытие элемента */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .button-primary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background: transparent;
+    padding: 10px 16px;
+    border: 1px solid #212121;
+    cursor: pointer;
+  }
+
+  .link {
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: color 0.3s;
+  }
+
+  .link:hover,
+  .lonk:focus {
+    color: var(--link-hover);
+  }
+
+
+/*#endregion ---UTILITIES---*/
+
+
+
+
+.hero {
+  background: #d1d5c7 url(../images/hero/1400/hero-background_1400.jpg) no-repeat right bottom;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../images/hero/1400/hero-background_1400@2x.jpg);
+  }
+}
+
+
+.hero-navigation {
+  
+}
+
+.hero-navigation__list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-navigation__item {
+}
+.hero-navigation__logo {
+  font-family: 'WindSong', cursive;
+  font-size: 36px;
+  color: var(--primary-logotype);
+  margin-right: 60px;
+
+}
+.hero-navigation__link {
+}
+.hero__title {
+  font-family: 'WindSong', cursive;
+  font-size: 68px;
+}
+.hero__subtitle {
+}
+.button-primary {
+}
+
+
+
+
+
+/* MODAL WINDOW */
+.modal-window {
+  display: none;
+}
+
+.modal-window__button-close {
+}
+
+.form-entry {
+}
+
+.form-entry__title {
+}
+
+.form-entry__input {
+}
+
+.form-entry__button-complete {
+}
