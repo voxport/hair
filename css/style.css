@@ -124,7 +124,11 @@ address {
 
 
 .hero {
-  background: #d1d5c7 url(../images/hero/1400/hero-background_1400.jpg) no-repeat right bottom;
+  background: #d1d5c7 url(../images/hero/1400/hero-background_1400.jpg);
+  background-repeat: no-repeat;
+  background-position: right, bottom;
+  background-size: contain;
+  height: 100vh;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -142,10 +146,12 @@ address {
   display: flex;
   gap: 40px;
   align-items: center;
+  margin-bottom: 180px;
 }
 
 .hero-navigation__item {
 }
+
 .hero-navigation__logo {
   font-family: 'WindSong', cursive;
   font-size: 36px;
@@ -155,13 +161,29 @@ address {
 }
 .hero-navigation__link {
 }
+
 .hero__title {
   font-family: 'WindSong', cursive;
-  font-size: 68px;
+  font-size: 140px;
+  font-weight: 400;
+  color: var(--primary-logotype);
+  margin-left: 120px;
+  line-height: 0.8;
+
 }
 .hero__subtitle {
+  width: 30%;
+  margin-left: 160px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--form-title);
+  margin-left: 220px;
+  margin-bottom: 80px;
 }
-.button-primary {
+
+.hero__button {
+  margin-left: 220px;
 }
 
 
