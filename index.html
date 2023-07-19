@@ -10,8 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Roboto:wght@400;700&family=WindSong:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,600&family=Roboto:wght@300;700&family=WindSong:wght@400;500&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/modern-normalize.min.css">
@@ -20,7 +24,7 @@
 
 <body>
     <!-- HERO SECTION -->
-    <div class="hero container">
+    <section class="hero container">
         <nav class="hero-navigation">
             <ul class="hero-navigation__list">
                 <li class="hero-navigation__item">
@@ -28,15 +32,15 @@
                 </li>
 
                 <li class="hero-navigation__item">
-                    <a href="#" class="hero-navigation__link link">Contacts</a>
+                    <a href="#" class="hero-navigation__link navigation-link">Contacts</a>
                 </li>
 
                 <li class="hero-navigation__item">
-                    <a href="#" class="hero-navigation__link link">About Me</a>
+                    <a href="#" class="hero-navigation__link navigation-link">About Me</a>
                 </li>
 
                 <li class="hero-navigation__item">
-                    <a href="#" class="hero-navigation__link link">Price</a>
+                    <a href="#" class="hero-navigation__link navigation-link">Price</a>
                 </li>
             </ul>
         </nav>
@@ -46,7 +50,46 @@
             facilis quibusdam molestiae cupiditate dolor expedita. Modi, repellendus vero.</h2>
 
         <button class="hero__button button-primary" type="button">PUSH ME</button>
-    </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about container">
+        <img src="./images/about/1400/about_1400.jpg" alt="image about" width="700" height="467">
+        <div class="about__text-wrapper">
+            <p class="about__description section-subtitle">Lorem, ipsum dolor.</p>
+            <h2 class="about__title section-title">Lorem, ipsum.</h2>
+
+            <svg class="about__title-icon" width="300" height="54">
+                <use href="./images/icon.svg#icon-line1"></use>
+            </svg>
+
+            <p class="about__about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda vero a,
+                quae modi ab voluptate voluptatibus itaque, fuga placeat, quo labore est non hic sequi ducimus libero et
+                odio consequatur velit odit natus ut ipsum. Placeat laborum libero ut eveniet eaque magnam ullam, veniam
+                consectetur, rerum architecto molestias quos!</p>
+        </div>
+    </section>
+
+    <!-- WE ARE OPEN SECTION -->
+    <section class="work container">
+        <div class="work__text-wrapper">
+            <p class="work__description section-subtitle">Lorem, ipsum dolor.</p>
+            <h2 class="work__title section-title">Lorem, ipsum.</h2>
+
+            <svg class="work__title-icon" width="300" height="54">
+                <use href="./images/icon.svg#icon-line1"></use>
+            </svg>
+
+            <p class="work__about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda vero a,
+                quae modi ab voluptate voluptatibus itaque, fuga placeat, quo labore est non hic sequi ducimus libero et
+                odio consequatur velit odit natus ut ipsum. Placeat laborum libero ut eveniet eaque magnam ullam, veniam
+                consectetur, rerum architecto molestias quos!</p>
+        </div>
+
+        <img src="./images/about/1400/about_1400.jpg" alt="image work" width="700" height="467">
+
+
+    </section>
 
 
 
@@ -54,23 +97,25 @@
 
     <div class="modal-window">
         <button class="modal-window__button-close" type="button">
-            x
+            <svg width="24" height="24">
+                <use href="./images/icon.svg#icon-close"></use>
+            </svg>
         </button>
 
         <!-- FORM  -->
         <div class="form-entry">
             <h3 class="form-entry__title">Lorem, ipsum dolor!</h3>
-            <label for="form-entry__user-name">please, enter your name</label>
+            <label class="form-entry__label" for="form-entry__user-name">please, enter your name</label>
             <input class="form-entry__input" type="text" id="form-entry__user-name" autocomplete="on">
 
-            <label for="form-entry__user-surname">please, enter your surname</label>
+            <label class="form-entry__label" for="form-entry__user-surname">please, enter your surname</label>
             <input class="form-entry__input" type="text" id="form-entry__user-surname" autocomplete="on">
 
-            <label for="form-entry__user-phone">please, enter your phone</label>
+            <label class="form-entry__label" for="form-entry__user-phone">please, enter your phone</label>
             <input class="form-entry__input" type="text" id="form-entry__user-phone" autocomplete="on">
 
 
-            <button class="form-entry__button-complete">RECALL ME</button>
+            <button class="form-entry__button-complete button-primary">RECALL ME</button>
 
         </div>
     </div>
