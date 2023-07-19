@@ -323,7 +323,11 @@ fill: #ffffff;
   width: 100%;
   margin-bottom: 12px;
   color: var(--button-active);
-  padding: 8px 12px;
+  padding: 6px 12px;
+}
+
+.form-entry__input:last-of-type {
+  margin-bottom: 60px;
 }
 
 .form-entry__button-complete {}
